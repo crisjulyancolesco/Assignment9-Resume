@@ -1,0 +1,32 @@
+{
+    "Name": "CRIS JULYAN C. OLESCO",
+    "Address": "123 Modelo St. Brgy. Tayuman, Quezon City, Philippines",
+    "Contact No.": "(0912) 345-6789",
+    "Email Address": "criscross00@gmail.com",
+
+    "Title1": "OBJECTIVE: SENIOR PROGRAMMER                            ",
+
+    "Title2": "EDUCATIONAL BACKGROUND                                                                                          ",
+    "Course": "Bachelor of Science in Computer Engineering",
+    "School": "Polytechnic University of the Philippines",
+    "Year": "2020 - 2025",
+
+    "Title3": "SKILLS                                                                                                                                        ",
+    "Skill1":"Visual Studio Code",
+    "Skill2": "Python",
+    "Skill3": "JSON",
+
+    "Title4": "WORKING EXPERIENCES                                                                                                    ",
+    "Work1": "Programable Corporation                        2025 - 2026                       Assistant Programmer ",
+    "Work2": "Sight-Anti Virus Company                     2026 - 2030                        Assistant Junior Developer",
+    "Work3": "Microsoft Corporation                            2030 - Present                    Junior Programmer",
+
+    "Title5": "PROJECTS                                                                                                                                 ",
+    "Project1": "TikBook",
+    "Desc1": "Description: TikBook is an app where you can read and write stories online.",
+    "Project2": "Musicify",
+    "Desc2": "Description: Musicify is an app where you can listen or watch music, podcats, and lives.",
+
+    "Title6": "CHARACTER REFERENCES                                                                                                ",
+    "Ref": "Availble upon request"
+}
