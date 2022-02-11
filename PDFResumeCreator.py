@@ -40,60 +40,65 @@ Position3 = Resume["Position3"]
 Title5 = Resume["Title5"]
 Ref = Resume["Ref"]
 
-Pdf = FPDF("P", "cm", "Legal")
+# PDF
+Pdf = FPDF("P", "cm", "Letter")
 Pdf.add_page()
 
-# Personal info
+#Spaces
+Pdf.set_font("Arial", "B", 15)
+Pdf.cell(0,0.5, align = "L", ln=1)
+Pdf.cell(0,0.5, align = "L", ln=1)
+Pdf.cell(0,0.5, align = "L", ln=1)
+
+#Personal info
 Pdf.set_font("Arial", "B", 15)
 Pdf.cell(0,1, Name, align = "L", ln=True)
-Pdf.set_font("Arial","", 12)
+Pdf.set_font("Arial","", 13)
 Pdf.cell(0,0.5, Address, align = "L", ln=1)
 Pdf.cell(0,0.5, Contact, align = "L",ln=1)
 Pdf.cell(0,0.5, Email, align = "L", ln=1)
 
+#Picture
+Pdf.image( "144x144px.jpg", 15, 1, 5 )
+
 # Objective
-Pdf.set_font("Arial", "BU", 12)
+Pdf.set_font("Arial", "BU", 13)
 Pdf.cell(0,1.5, Title1, align = "L", ln=1)
 
 #Education
-Pdf.set_font("Arial", "BU", 12)
+Pdf.set_font("Arial", "BU", 13)
 Pdf.cell(0,1.5, Title2, align = "L", ln=1)
-Pdf.set_font("Arial", "", 12)
+Pdf.set_font("Arial", "", 13)
 Pdf.cell(0,0.5, Course, align = "L", ln=2)
 Pdf.cell(0,0.5, School, align = "l",ln=True)
 Pdf.cell(0,0.5, Year, align = "L", ln=True)
 
 #Skills
-Pdf.set_font("Arial", "BU", 12)
+Pdf.set_font("Arial", "BU", 13)
 Pdf.cell(0,1.5, Title3, align = "L", ln=1)
-Pdf.set_font("Arial", "", 12)
+Pdf.set_font("Arial", "", 13)
 Pdf.cell(0,0.5, Skill1, align = "L", ln=1)
 Pdf.cell(0,0.5, Skill2, align = "L", ln=1)
 Pdf.cell(0,0.5, Skill3, align = "L", ln=1)
 
 #Working Experience
-Pdf.set_font("Arial", "BU", 12)
+Pdf.set_font("Arial", "BU", 13)
 Pdf.cell(0,1.5, Title4, align = "L", ln=1)
 
-Pdf.set_font("Arial", "", 12)
-Pdf.cell(0,0.2, Work1, align = "L", ln=1)
-Pdf.cell(0,0.2, Date1, align = "C", ln=1)
-Pdf.cell(0,0.2, Position1, align = "R", ln=1)
+Pdf.set_font("Arial", "", 13)
+Pdf.cell(0,0.5, Work1, align = "L", ln=1)
 
-Pdf.set_font("Arial", "", 12)
-Pdf.cell(0,0.2, Work2, align = "L", ln=2)
-Pdf.cell(0,0.2, Date2, align = "C", ln=2)
-Pdf.cell(0,0.2, Position2, align = "R", ln=2)
+Pdf.set_font("Arial", "", 13)
+Pdf.cell(0,0.5, Work2, align = "L", ln=2)
 
-Pdf.set_font("Arial", "", 12)
-Pdf.cell(0,0.2, Work3, align = "L", ln=3)
-Pdf.cell(0,0.2, Date3, align = "C", ln=3)
-Pdf.cell(0,0.2, Position3, align = "R", ln=3)
+Pdf.set_font("Arial", "", 13)
+Pdf.cell(0,0.5, Work3, align = "L", ln=3)
+
 
 #Char Ref
-Pdf.set_font("Arial", "BU", 12)
+Pdf.set_font("Arial", "BU", 13)
 Pdf.cell(0,1.5, Title5, align = "L", ln=1)
-Pdf.set_font("Arial", "", 12)
+Pdf.set_font("Arial", "", 13)
 Pdf.cell(0,0.5, Ref, align = "L", ln=1)
 
 
